@@ -12,13 +12,13 @@ public class Triangle {
 		side3 = 1.0;
 	}
 	
-	Triangle(double x, double y, double z) throws Exception{
+	Triangle(double x, double y, double z) throws TriangleException{
 		if (x+y>z && x+z>y && y+z>x){
 			side1 = x;
 			side2 = y;
 			side3 = z;
 		}
-		else throw new Exception();
+		else throw new TriangleException();
 	}
 	
 	public double getSide1(){

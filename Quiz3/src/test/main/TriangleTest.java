@@ -27,7 +27,7 @@ public class TriangleTest {
 	}
 
 	@Test
-	public void TestTriangle() throws Exception {
+	public void TestTriangle() throws TriangleException {
 		Triangle t = new Triangle(3.0,4.0,5.0);
 		assertEquals(12.0, t.getPerimeter());
 		assertEquals(6.0, t.getArea());
